@@ -1,7 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: "Poppins";
+    font-family: "sans-serif";
 }
 
 
@@ -31,12 +31,14 @@
 
 .sidebar_menu{
     position: fixed;
-    /* left: -330px; */
+    left: -330px;
     height: 100vh;
     width: 300px;
     background-color: rgba(255, 255, 255, 0.1);
     box-shadow: 0 0 9px rgba(255, 255, 255, 0.5);
     border-radius: 5px;
+    transition: all 0.3s li;
+    transition: all 0.3s linear ;
 }
 .sidebar_menu .logo {
     position: absolute;
@@ -60,7 +62,7 @@
     line-height: 60px;
     font-size: 20px;
     font-weight: 700;
-    /* opacity: 0; */
+    opacity: 0;
     cursor: pointer;
     transition: all 0.3s linear;
 }
@@ -120,4 +122,18 @@ li:hover{
 .btn_2 i:hover{
     font-size: 25px;
     color: white;
+}
+
+input:checked ~ .sidebar_menu{
+    left: 0px;
+    
+}
+
+
+input:checked ~ .btn_1 i {
+    opacity: 0;
+}
+
+input:checked~ .sidebar_menu .btn_2 i{
+    opacity: 1;
 }
