@@ -1,21 +1,27 @@
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: "sans-serif";
 }
 
 
-#outer{
+#main_box {
     background: url(photo.jpg);
     height: 100vh;
-    background-size: cover;;
+    background-size: cover;
+    ;
+    position: relative;
+    /* Allows child elements to position correctly */
+    overflow-x: hidden;
+    /* Prevents unwanted horizontal scroll bars */
+    box-sizing: border-box;
 }
 
-#check{
+#check {
     display: none;
 }
 
-.btn_1 i{
+.btn_1 i {
     color: white;
     font-size: 25px;
     font-weight: 750;
@@ -29,7 +35,7 @@
 }
 
 
-.sidebar_menu{
+.sidebar_menu {
     position: fixed;
     left: -330px;
     height: 100vh;
@@ -38,8 +44,9 @@
     box-shadow: 0 0 9px rgba(255, 255, 255, 0.5);
     border-radius: 5px;
     transition: all 0.3s li;
-    transition: all 0.3s linear ;
+    transition: all 0.3s linear;
 }
+
 .sidebar_menu .logo {
     position: absolute;
     width: 100%;
@@ -47,7 +54,8 @@
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
     height: 70px;
 }
-.sidebar_menu .logo a{
+
+.sidebar_menu .logo a {
     text-decoration: none;
     color: white;
     font-size: 20px;
@@ -55,7 +63,8 @@
     left: 60px;
     font-weight: 700;
 }
-.btn_2 i{
+
+.btn_2 i {
     color: gray;
     position: absolute;
     left: 270px;
@@ -67,73 +76,76 @@
     transition: all 0.3s linear;
 }
 
-.menu{
+.menu {
     position: absolute;
     width: 100%;
     top: 80px;
 }
 
-.menu li{
+.menu li {
     margin-top: 6px;
     padding: 15px 20px;
 }
 
-.sidebar_menu .menu a,i{
+.sidebar_menu .menu a,
+i {
     text-decoration: none;
     color: white;
 }
 
-.menu i{
+.menu i {
     /* margin-right: 15px; */
     padding-right: 10px;
 
 }
 
-.sidebar_menu .social_media{
+.sidebar_menu .social_media {
     position: absolute;
     left: 25%;
     bottom: 50px;
 }
 
-.social_media a{
+.social_media a {
 
     text-decoration: none;
 }
-.social_media i{
+
+.social_media i {
     opacity: 0.5;
     padding: 0 5px;
 
 }
 
-.social_media i:hover{
+.social_media i:hover {
     opacity: 1;
     transform: scale(1.2);
 }
 
-li:hover{
+li:hover {
     box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
 }
 
-.btn_1 i:hover{
+.btn_1 i:hover {
     font-size: 35px;
     opacity: 1;
 }
 
-.btn_2 i:hover{
+.btn_2 i:hover {
     font-size: 25px;
     color: white;
 }
 
-input:checked ~ .sidebar_menu{
+input:checked~.sidebar_menu {
     left: 0px;
-    
+
 }
 
 
-input:checked ~ .btn_1 i {
+input:checked~.btn_1 i {
     opacity: 0;
 }
 
-input:checked~ .sidebar_menu .btn_2 i{
+input:checked~.sidebar_menu .btn_2 i {
     opacity: 1;
 }
+
