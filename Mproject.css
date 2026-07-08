@@ -149,3 +149,40 @@ input:checked~.sidebar_menu .btn_2 i {
     opacity: 1;
 }
 
+.card-text{
+    text-align: center;
+}
+
+/* Ensure the photo section drops into a flexible flexbox layout if inside a main container */
+#photoSection {
+    max-width: 750px;         /* Slightly narrower to pull the height down naturally */
+    margin: 80px auto 0 auto; 
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Force the Bootstrap cards to take up the full column grid space correctly */
+#photoSection .card {
+    width: 100% !important; 
+    height: 180px !important; /* Forces all cards to stay short */
+    overflow: hidden;         /* Prevents any internal content leaks */
+    display: flex;
+    flex-direction: column;
+}
+
+#photoSection .card-img-top {
+    height: 120px;            /* Locks down the height of the image */
+    object-fit: cover;
+}
+
+#photoSection .card-body {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#photoSection .card-text {
+    margin: 0;
+    font-size: 14px;          /* Clean, slightly smaller text to fit the compact design */
+}
