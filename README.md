@@ -1,1 +1,1 @@
-Not such big projects, Just for practicing!!
+No such big projects, Just for practicing!!
