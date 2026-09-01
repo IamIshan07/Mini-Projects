@@ -1,0 +1,46 @@
+h1 {
+    text-align: center;
+}
+
+input {
+    text-align: center;
+    background-color: #2d2d44;
+    color: white;
+    border: 1px solid #555;
+}
+
+li {
+    margin: 5px;
+}
+
+li button {
+    margin-left: 5px;
+    background-color: #dc2626;
+    color: white;
+}
+
+body {
+    background-color: #1e1e2f;
+    color: #ffffff;
+}
+
+button {
+    background-color: #4f46e5;
+    color: white;
+}
+
+ul {
+    text-align: left;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
