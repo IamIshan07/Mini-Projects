@@ -26,7 +26,7 @@ body {
 }
 
 .green {
-    background-color: green;
+    background-color: #63aac0;
 }
 
 .purple {
@@ -36,3 +36,9 @@ body {
 .flash{
     background-color: white;
 }
+
+.userflash {
+    background-color: lime;
+}
+
+
