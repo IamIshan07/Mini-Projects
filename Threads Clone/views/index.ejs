@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+
+<body>
+    <h1>Threads</h1>
+    <% for (const post of posts) { %>
+        <div class="post">
+            <div class="post-header">
+                <h3 class="username">
+                    @<%=post.username%>
+                </h3>
+                <p class="date">
+                    <%= post.createdAt %>
+                </p>
+            </div>
+
+
+            <img src="<%= post.imageUrl %>" alt="img">
+
+            <p>
+                <%= post.content %>
+            </p>
+            <p>
+                ❤️<%= post.likes %> Likes
+            </p>
+            <a href="http://localhost:3000/posts/<%= post.id %>">View Post</a>
+        </div>
+        <% } %>
+            <a class="create-btn" href="http://localhost:3000/posts/new">Create New Post</a>
+</body>
+
+</html>

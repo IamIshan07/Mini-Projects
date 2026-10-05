@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Post</title>
+    <link rel="stylesheet" href="/edit.css">
+</head>
+
+<body>
+    <h2>Edit Post !</h2>
+    <form action="/posts/<%= post.id %>?_method=PATCH" method="post">
+        <input name="imageUrl" type="url" value="<%= post.imageUrl%>">
+        <textarea name="content"><%= post.content %></textarea>
+        <button>Save</button>
+    </form>
+    <a href="/posts" class="back-link">Back to Posts</a>
+</body>
+
+</html>

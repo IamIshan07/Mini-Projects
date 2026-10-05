@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Post</title>
+    <link rel="stylesheet" href="/show.css">
+</head>
+
+<body>
+    <div class="post">
+        <div class="post-header">
+            <h3 class="username">
+                @<%=post.username%>
+            </h3>
+            <p class="date">
+                <%= post.createdAt %>
+            </p>
+        </div>
+
+        <p class="post-id">
+            <%= post.id %>
+        </p>
+        <img src="<%= post.imageUrl %>" alt="img">
+
+        <p class="content">
+            <%= post.content %>
+        </p>
+        <p class="likes">
+            ❤️<%= post.likes %> Likes
+        </p>
+        <div class="buttons">
+            <a class="edit-btn" href="/posts/<%= post.id %>/edit">Edit Post</a>
+
+            <form action="/posts/<%= post.id %>?_method=DELETE" method="post">
+                <button class="delete-btn">Delete Post</button>
+            </form>
+
+            <a class="return-btn" href="/posts">Return</a>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
