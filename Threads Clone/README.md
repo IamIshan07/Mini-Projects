@@ -136,4 +136,4 @@ This project was built as part of learning backend development with Express.js. 
 ## 👨‍💻 Author
 
 **Ishan**
-B.Tech CSE Student | MERN Stack Learner
+B.Tech CSE Student.
