@@ -103,7 +103,6 @@ HTML → CSS → JavaScript → Node.js → Express.js
 
 **Ishan Kar**
 - B.Tech CSE Student
-- Web Development & MERN Stack Learner
 - GitHub: @IamIshan07
 
 ---
