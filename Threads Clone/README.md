@@ -1,4 +1,4 @@
-# 🧵 Threads Clone
+# 🧵 Threads Clone.
 
 A simple Threads-inspired social media application built using **Node.js**, **Express.js**, and **EJS**. This project was created to practice **CRUD operations**, **routing**, **EJS templating**, and **RESTful architecture**.
 
